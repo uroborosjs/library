@@ -1,0 +1,36 @@
+{
+  "name": "uroboros-library",
+  "version": "0.0.1",
+  "description": "Easily share components and drivers.",
+  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malusovium/instapy-tools.git"
+  },
+  "keywords": [
+    "uroborosjs"
+  ],
+  "author": "Michiel Kamphuis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uroborosjs/library/issues"
+  },
+  "homepage": "https://github.com/uroborosjs/library#readme",
+  "dependencies": {
+    "rambda": "^1.1.5",
+    "ts-node": "^6.2.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.15",
+    "ts-node-dev": "^1.0.0-pre.26",
+    "tslint": "^5.10.0"
+  }
+}

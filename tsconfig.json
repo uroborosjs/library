@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "lib",
+    "noEmitOnError": false,
+    "module": "commonjs",
+    "declaration": true,
+    "moduleResolution": "node",
+    "target": "esnext",
+    "sourceMap": true,
+    "noImplicitReturns": false,
+    "strict": true,
+    "lib": [
+      "esnext",
+      "ES2015",
+      "ES7",
+      "ES6",
+      "ES5",
+      "DOM"
+    ]
+  },
+  "include": ["src"],
+  "exclude": [ "node_modules" ]
+}
