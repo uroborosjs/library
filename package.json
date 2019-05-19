@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "test": "ava src/**/*.ts",
+    "test": "ava -w src/**/*.test.ts",
     "prepare": "npm run build",
     "postversion": "git push && git push --tags"
   },
@@ -25,18 +25,20 @@
   },
   "homepage": "https://github.com/uroborosjs/library#readme",
   "dependencies": {
-    "lambal": "^0.1.0"
+    "@cycle/dom": "^22.3.0",
+    "@cycle/run": "^5.2.0",
+    "@cycle/state": "^1.2.0",
+    "lambal": "^0.1.0",
+    "xstream": "^11.11.0"
   },
   "devDependencies": {
-    "@types/node": "^10.12.15",
+    "@types/node": "^12.0.1",
     "ava": "^1.4.1",
-    "ts-node": "^6.2.0",
-    "ts-node-dev": "^1.0.0-pre.26",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
   },
   "ava": {
-    "compilerEnhancements": false,
+    "compileEnhancements": false,
     "extensions": [
       "ts"
     ],
