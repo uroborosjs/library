@@ -1,6 +1,6 @@
 {
   "name": "uroboros-library",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Easily share components and drivers.",
   "types": "src/index.ts",
   "main": "lib/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Malusovium/instapy-tools.git"
+    "url": "git+https://github.com/uroborosjs/library.git"
   },
   "keywords": [
     "uroborosjs"
